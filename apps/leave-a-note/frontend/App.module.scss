@@ -1,0 +1,96 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.adminToggle {
+  padding: 0.35rem 0.9rem;
+  background: none;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  color: inherit;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #646cff;
+    color: #646cff;
+  }
+
+  @media (prefers-color-scheme: light) {
+    border-color: #ccc;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feedHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.refresh {
+  margin-left: auto;
+  background: none;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  color: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  line-height: 1;
+
+  &:hover {
+    border-color: #646cff;
+  }
+
+  @media (prefers-color-scheme: light) {
+    border-color: #d0d0d0;
+  }
+}
+
+.noteList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.state {
+  margin: 0;
+  opacity: 0.55;
+  font-size: 0.95rem;
+}

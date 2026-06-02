@@ -1,0 +1,39 @@
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  @media (prefers-color-scheme: light) {
+    background-color: #ffffff;
+    border-color: #e0e0e0;
+  }
+}
+
+.text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.author {
+  font-weight: 600;
+}
+
+.date {
+  white-space: nowrap;
+}

@@ -1,0 +1,126 @@
+.root {
+  position: fixed;
+  inset: 0;
+  background: #0f0f0f;
+  overflow: hidden;
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.canvas:active {
+  cursor: grabbing;
+}
+
+.hud {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(15, 15, 15, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+  color: #fff;
+  font-size: 13px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.hudTitle {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.hudUser {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.loginLink {
+  color: #e63946;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover { color: #ff6b75; }
+}
+
+.hudPixels {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  margin-top: -4px;
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.colorLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.colorInput {
+  width: 36px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px;
+  background: transparent;
+}
+
+.colorHex {
+  font-family: monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cooldown {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cooldownReady {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.cooldownWaiting {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.status {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.hint {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.6;
+  margin-top: 2px;
+}
